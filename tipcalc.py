@@ -14,16 +14,12 @@ class TipCalculator:
         print(f"\nTip amount: ${tip_amount:.2f}")
         print(f"Total amount (including tip): ${total_amount:.2f}")
 
-
 def main():
     try:
         bill_amount = float(input("Enter the total bill amount: $"))
         tip_percentage = float(input("Enter the tip percentage (e.g., 15 for 15%): "))
 
-        calculator = TipCalculator(bill_amount, tip_percentage)
-        calculator.calculate_and_display_tip()
 
-    except ValueError:
-        print("Please enter valid numeric values.")
+
 
 main()
