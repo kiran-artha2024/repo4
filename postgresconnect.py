@@ -19,7 +19,7 @@ records=[(1,'emp1',10000,'bknd'),(2,'emp2',20000,'ftnd'),(3,'emp3',30000,'fullst
 cur.executemany(empstr,records)"""
 #cur.execute("SELECT * FROM information_schema.tables WHERE table_schema = 'public';")
 #cur.execute("select * from emp")
-cur.execute("select sum(total_amount) as total from orders")
+cur.execute("select avg(total_amount) as total from orders")
 tables=cur.fetchall()
 for i in tables:
     print(i)
